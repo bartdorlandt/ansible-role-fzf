@@ -1,0 +1,2 @@
+---
+fzf_parentdir: "{{ ansible_env.HOME }}/git"

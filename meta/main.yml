@@ -1,0 +1,24 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: bartdorlandt
+  role_name: fzf
+  description: fzf installation
+  license: license (BSD, MIT)
+  min_ansible_version: "2.2"
+  platforms:
+    - name: GenericUNIX
+      versions:
+        - all
+    - name: GenericBSD
+      versions:
+        - all
+    - name: GenericLinux
+      versions:
+        - all
+  galaxy_tags:
+    - shell
+    - fzf
+    - bash
+    - zsh
