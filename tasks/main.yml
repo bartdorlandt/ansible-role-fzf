@@ -5,7 +5,7 @@
     state: directory
     mode: "0750"
 
-- name: Git pull fzf
+- name: Git pull fzf # noqa latest[git]
   ansible.builtin.git:
     repo: https://github.com/junegunn/fzf.git
     dest: "{{ fzf_parentdir }}/fzf"
