@@ -1,6 +1,6 @@
 ---
 - name: Ensure fzf parent directory exists
-  file:
+  ansible.builtin.file:
     path: "{{ fzf_parentdir }}"
     state: directory
     mode: "0750"
