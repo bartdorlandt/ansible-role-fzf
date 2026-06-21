@@ -7,7 +7,9 @@
       ansible.builtin.apt:
         update_cache: true
 
-    - name: Install git
+    - name: Install packages
       ansible.builtin.apt:
-        name: git
+        name:
+          - curl
+          - git
         state: present
