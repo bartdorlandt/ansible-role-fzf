@@ -13,6 +13,6 @@
     update: true
 
 - name: Install fzf
-  ansible.builtin.command: "{{ fzf_parentdir }}/fzf/install --all"
-  args:
+  ansible.builtin.command:
+    cmd: "{{ fzf_parentdir }}/fzf/install --all"
     creates: "{{ fzf_parentdir }}/fzf/bin/fzf"
