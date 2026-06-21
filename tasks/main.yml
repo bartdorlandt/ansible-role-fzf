@@ -5,7 +5,7 @@
     state: directory
     mode: "0750"
 
-- name: Git pull fzf # noqa latest[git]
+- name: Git clone fzf  # noqa: latest[git]
   ansible.builtin.git:
     repo: https://github.com/junegunn/fzf.git
     dest: "{{ fzf_parentdir }}/fzf"
@@ -13,6 +13,6 @@
     update: true
 
 - name: Install fzf
-  ansible.builtin.command: "{{ ansible_env.HOME }}/git/fzf/install --all"
+  ansible.builtin.command: "{{ fzf_parentdir }}/fzf/install --all"
   args:
-    creates: "{{ ansible_env.HOME }}/.fzf.zsh"
+    creates: "{{ fzf_parentdir }}/fzf/bin/fzf"

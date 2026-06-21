@@ -1,2 +1,2 @@
 ---
-fzf_parentdir: "{{ ansible_env.HOME }}/git"
+fzf_parentdir: "{{ ansible_facts['user_dir'] }}/git"
